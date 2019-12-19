@@ -1,0 +1,6 @@
+node_modules/
+npm-debug.log
+.lock-wscript
+.svn
+.idea
+.DS_Store
