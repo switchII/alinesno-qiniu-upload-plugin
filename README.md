@@ -6,7 +6,7 @@
 
 #### 使用说明
 
-1.  npm install qiuupload -D
+1.  npm install qiudistupload -D
 2.  写入配置
 ```
 module.exports = {
