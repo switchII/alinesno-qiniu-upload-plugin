@@ -1,6 +1,6 @@
 {
   "name": "qiudistupload",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "qiniu upload webpack plugin",
   "main": "index.js",
   "scripts": {
