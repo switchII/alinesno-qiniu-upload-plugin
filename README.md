@@ -3,35 +3,33 @@
 #### 介绍
 前端项目build后自动上传到七牛云
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
+1.  npm install qiuupload -D
+2.  写入配置
+```
+module.exports = {
+    ...,
+    configureWebpack: config => {
+        if (process.env.NODE_ENV === 'production') {
+            config.plugins.push(new QiNiuUploadPlug({
+                                  publicPath: 'https://xxxxx', // 七牛云域名，和文件夹名称一起，自动替换默认设置的 publicPath
+                                  prefix, // 文件夹名称，默认 webDist
+                                  accessKey: 'xxxx', // 个人中心，秘钥管理，AK
+                                  secretKey: 'xxxx', // 个人中心，秘钥管理，SK
+                                  bucket: 'xxx', // 存储空间名称
+                                  zone: 'xxx', // 存储地区
+                                  cover: true, // 默认为 false, 慎用！设置为 true 会覆盖掉已经保存在七牛云上的同名文件。
+                                  clear: false, // 默认为 false 慎用！上传前是否清空文件夹里已上传的文件 
+                                }))
+        }
+    }
+}
+```
 
 #### 码云特技
 
 1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+2.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
+3.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目

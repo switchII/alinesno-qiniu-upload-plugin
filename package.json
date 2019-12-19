@@ -1,0 +1,25 @@
+{
+  "name": "qiudistupload",
+  "version": "1.0.0",
+  "description": "qiniu upload webpack plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ora": "^4.0.2",
+    "qiniu": "^7.2.2",
+    "webpack": "^4.41.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/hx5502/qiuDistUpload.git"
+  },
+  "keywords": [
+    "qiniu",
+    "webpack"
+  ],
+  "homepage": "https://gitee.com/hx5502/qiuDistUpload#readme",
+  "author": "hx",
+  "license": "ISC"
+}
