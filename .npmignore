@@ -4,3 +4,9 @@ npm-debug.log
 .svn
 .idea
 .DS_Store
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
