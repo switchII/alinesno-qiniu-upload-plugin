@@ -14,15 +14,15 @@ module.exports = {
     configureWebpack: config => {
         if (process.env.NODE_ENV === 'production') {
             config.plugins.push(new QiNiuUploadPlug({
-                                  publicPath: 'https://xxxxx', // 七牛云域名，和文件夹名称一起，自动替换默认设置的 publicPath
-                                  prefix, // 文件夹名称，默认 webDist
-                                  accessKey: 'xxxx', // 个人中心，秘钥管理，AK
-                                  secretKey: 'xxxx', // 个人中心，秘钥管理，SK
-                                  bucket: 'xxx', // 存储空间名称
-                                  zone: 'xxx', // 存储地区
-                                  cover: true, // 默认为 false, 慎用！设置为 true 会覆盖掉已经保存在七牛云上的同名文件。
-                                  clear: false, // 默认为 false 慎用！上传前是否清空文件夹里已上传的文件 
-                                }))
+                  publicPath: 'https://xxxxx', // 七牛云域名，和文件夹名称一起，自动替换默认设置的 publicPath
+                  prefix, // 文件夹名称，默认 webDist
+                  accessKey: 'xxxx', // 个人中心，秘钥管理，AK
+                  secretKey: 'xxxx', // 个人中心，秘钥管理，SK
+                  bucket: 'xxx', // 存储空间名称
+                  zone: 'xxx', // 存储地区
+                  cover: true, // 默认为 false, 慎用！设置为 true 会覆盖掉已经保存在七牛云上的同名文件。
+                  clear: false, // 默认为 false 慎用！上传前是否清空文件夹里已上传的文件 
+            }))
         }
     }
 }
