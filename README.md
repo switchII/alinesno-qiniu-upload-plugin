@@ -28,6 +28,14 @@ module.exports = {
 }
 ```
 
+#### 也可以自己改造适合自己的
+
+1. 把lib目录下的文件拷出来，放在项目根目录，然后在webpack里引入，用法如上
+2. 如果是vue-cli构建的项目，直接在vue.config.js里引入，用法还是如上
+
+### Tips
+插件基于webpack 4.x，node 8以上的，这里注意下
+
 #### 码云特技
 
 1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
